@@ -1,0 +1,5 @@
+datasets
+unsloth[mistral,qlora]
+torch
+transformers
+trl
