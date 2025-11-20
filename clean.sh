@@ -1,6 +1,7 @@
 #!/bin/bash
 
-MODEL="mistral:instruct"
+export $(grep -v '^#' .env | xargs)
+MODEL=$MODELO
 
 echo "🧹 INICIANDO LIMPIEZA..."
 echo "--------------------------------"

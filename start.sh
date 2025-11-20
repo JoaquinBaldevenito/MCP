@@ -1,8 +1,9 @@
 #!/bin/bash
 
-REQUIRED_MODEL="mistral:instruct"
+export $(grep -v '^#' .env | xargs)
+REQUIRED_MODEL=$MODELO
 VENV_DIR=".venv"
-LOG_FILE="ollama_debug.log"
+LOG_FILE="debug.log"
 
 if [ -d "$VENV_DIR" ]; then
     source $VENV_DIR/bin/activate

@@ -1,4 +1,5 @@
 import json
+import os
 
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
@@ -31,7 +32,9 @@ tools = [
 ]
 
 # --- 3. Inicializar el modelo (APUNTANDO AL MODELO BASE PARA PROBAR) ---
-llm = ChatOllama(model="mistral:instruct")
+
+MODEL=os.getenv("MODELO", "model_default")
+llm = ChatOllama(model=MODEL)
 
 # --- 4. Vincular herramientas al modelo ---
 llm_with_tools = llm.bind_tools(tools)
@@ -39,7 +42,7 @@ llm_with_tools = llm.bind_tools(tools)
 # --- 5. Lógica del Chat ---
 print("Iniciando chat con MODELO BASE (para pruebas). Escribí 'salir' para terminar.")
 print("---")
-print("NOTA: El modelo base 'mistral:instruct' NO está afinado.")
+print("NOTA: El modelo base NO está afinado.")
 print("Puede que intente chatear en vez de usar las herramientas. ¡El objetivo aquí es probar la lógica!")
 print("---")
 

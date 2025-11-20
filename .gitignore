@@ -13,4 +13,11 @@ Thumbs.db
 
 .venv/
 
-ollama_debug.log
+debug.log
+
+mi_modelo_afinado_lora/
+mi_modelo_ollama/
+outputs/
+unsloth_compiled_cache/
+
+phi-3-mini-4k-instruct.Q4_K_M.gguf
