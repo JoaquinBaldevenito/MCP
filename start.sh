@@ -71,13 +71,13 @@ else
     echo "✅ Instancia temporal lista"
 fi
 
-# 5. VERIFICAR Y DESCARGAR MODELO
-if ! ollama list | grep -q "$REQUIRED_MODEL"; then
-    echo "📦 El modelo '$REQUIRED_MODEL' no está descargado"
-    echo "📥 Descargando..."
-    ollama pull "$REQUIRED_MODEL"
+MODELFILE="Modelfile.avanzado" # O el nombre que uses
+
+if [ -f "$MODELFILE" ]; then
+    echo "📝 Forzando actualización del modelo '$REQUIRED_MODEL'..."
+    ollama create "$REQUIRED_MODEL" -f "$MODELFILE"
 else
-    echo "🧠 Modelo '$REQUIRED_MODEL' verificado"
+    echo "⚠️  No encontré el Modelfile. Usando modelo en memoria."
 fi
 
 echo "--------------------------------------------------"

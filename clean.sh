@@ -16,8 +16,17 @@ if pgrep -x "ollama" > /dev/null; then
         echo "⚠️  No se pudo eliminar el modelo (quizás ya no existe)."
     fi
 else
-    echo "⚠️  Ollama no está corriendo, no se puede desinstalar el modelo limpiamente."
-    echo "   (Para borrarlo, primero debes iniciar Ollama)."
+    echo "⚠️  Ollama no está corriendo, Iniciando..."
+    ollama serve &
+    sleep 5
+    echo "🗑️  Eliminando modelo '$MODEL'..."
+    ollama rm "$MODEL"
+    
+    if [ $? -eq 0 ]; then
+        echo "✅ Modelo eliminado y espacio liberado."
+    else
+        echo "⚠️  No se pudo eliminar el modelo (quizás ya no existe)."
+    fi
 fi
 
 echo "--------------------------------"
