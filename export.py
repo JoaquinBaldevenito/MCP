@@ -2,6 +2,32 @@ from unsloth import FastLanguageModel
 import os
 import shutil
 
+"""
+Script de Exportación de Modelos Unsloth a GGUF (con corrección de rutas).
+
+Descripción:
+    Este script automatiza el proceso de conversión de un modelo afinado (LoRA) 
+    con Unsloth a formato GGUF para su uso en Ollama o llama.cpp.
+
+Flujo de ejecución:
+    1. Carga el modelo y el tokenizador utilizando `FastLanguageModel`.
+    2. Realiza la conversión a GGUF con cuantización Q4_K_M.
+    3. Verifica la ubicación del archivo resultante (ya que llama.cpp a veces 
+        guarda el archivo en la raíz en lugar del directorio de salida).
+    4. Mueve el archivo a la carpeta `output_dir` correcta si es necesario.
+
+Configuración global:
+    - model_name: Ruta o ID del modelo afinado.
+    - output_dir: Carpeta de destino.
+    - max_seq_length: Longitud de contexto (ej. 1024, 2048).
+    - load_in_4bit: Carga optimizada en 4 bits.
+
+Salida:
+    Genera un archivo `.gguf` en el directorio especificado y muestra instrucciones
+    para el Modelfile.
+"""
+
+
 # --- CONFIGURACIÓN ---
 model_name = "mi_modelo_afinado_lora" 
 output_dir = "mi_modelo_ollama"

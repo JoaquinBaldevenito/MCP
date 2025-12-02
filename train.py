@@ -4,12 +4,37 @@ from datasets import load_dataset
 from trl import SFTTrainer
 from transformers import TrainingArguments
 
-# --- CONFIGURACIÓN PARA GTX 1650 (4GB VRAM) ---
+"""
+Script de Entrenamiento (Fine-Tuning) con Unsloth optimizado para 4GB VRAM.
+
+Descripción:
+    Este script realiza un ajuste fino supervisado (SFT) del modelo 'Phi-3-mini-4k-instruct'
+    utilizando técnicas de LoRA (Low-Rank Adaptation) y cuantización de 4 bits.
+    
+    Está configurado específicamente para funcionar en una grafica NVIDIA con 4GB VRAM,
+    utilizando un tamaño de lote (batch size) de 1 y acumulación de gradientes para
+    evitar errores de 'Out of Memory' (OOM).
+
+Requisitos de Entrada:
+    - Archivo 'dataset.jsonl': Debe contener objetos JSON con una lista "messages"
+        estructurada (usuario/asistente).
+
+Configuración Clave (Hardware Limitado):
+    - Modelo base: unsloth/Phi-3-mini-4k-instruct (ligero y potente).
+    - Max Seq Length: 1024 tokens (reducido para ahorrar VRAM).
+    - Batch Size: 1 (con gradient_accumulation_steps = 4).
+    - Optimizador: adamw_8bit (menor consumo de memoria).
+
+Salida:
+    - Guarda los adaptadores LoRA entrenados en la carpeta 'mi_modelo_afinado_lora'.
+"""
+
+# --- CONFIGURACIÓN PARA 4GB VRAM ---
 max_seq_length = 1024 # Bajamos un poco el contexto para ahorrar memoria
 dtype = None # Detecta automáticamente (float16)
 load_in_4bit = True # OBLIGATORIO: Carga en 4 bits para que entre en 4GB
 
-# Si se lo pasas a tu amigo con mejor gráfica, cambia esto a: 
+# Con una mejor gráfica, cambia esto a: 
 # model_name = "unsloth/mistral-7b-instruct-v0.3-bnb-4bit"
 model_name = "unsloth/Phi-3-mini-4k-instruct" 
 
@@ -86,7 +111,7 @@ trainer = SFTTrainer(
         gradient_accumulation_steps = 4, # Acumula 4 pasos (simula batch de 4)
         # --------------------------------------
         warmup_steps = 5,
-        max_steps = 60, # Número de pasos de entrenamiento (puedes subirlo a 100 si tienes tiempo)
+        max_steps = 60, # Número de pasos de entrenamiento
         learning_rate = 2e-4,
         fp16 = not torch.cuda.is_bf16_supported(),
         bf16 = torch.cuda.is_bf16_supported(),
