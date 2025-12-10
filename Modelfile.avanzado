@@ -1,79 +1,29 @@
 FROM ./mi_modelo_ollama/unsloth.Q4_K_M.gguf
 
 # PARÁMETROS
-PARAMETER temperature 0.0
-PARAMETER num_ctx 4096
+# repeat_penalty alto rompe el JSON. Mantenlo bajo.
+PARAMETER repeat_penalty 1.05
+PARAMETER temperature 0.1
+PARAMETER num_ctx 8192
+PARAMETER top_k 40
+PARAMETER top_p 0.9
 
-# STOP TOKENS
-PARAMETER stop "### Instruction:"
-PARAMETER stop "### Response:"
-PARAMETER stop "<|end|>"
+# STOP TOKENS (Estrictos para Llama 3)
+PARAMETER stop "<|start_header_id|>"
+PARAMETER stop "<|end_header_id|>"
+PARAMETER stop "<|eot_id|>"
+PARAMETER stop "<|end_of_text|>"
+PARAMETER stop "<|reserved_special_token"
 
-# SYSTEM PROMPT (CEREBRO LÓGICO)
-SYSTEM """
-Eres un asistente de ventas experto.
-
-TRADUCCIÓN OBLIGATORIA (Inglés de UK):
-- "Remera" -> "T-shirt"
-- "Pantalón" -> "Trousers"
-- "Zapatillas" -> "Trainers"
-- "Campera" -> "Jacket" o "Coat"
-- "Blanco" -> "White", "Negro" -> "Black"
-
-MAPA DE HERRAMIENTAS (¡Sigue esto estrictamente!):
-1. "find_products": Para buscar ropa específica o precios.
-   - Si piden "lo más barato" -> Usa {"sort_by_price": "asc"} (NO pongas "cheap" en search_term).
-   - Si piden "lo más caro" -> Usa {"sort_by_price": "desc"}.
-   - Si solo piden "remeras" -> Usa "t-shirt" (NO agregues colores que no pidieron).
-
-2. "get_return_policy":
-   - Palabras clave: "devolución", "cambio", "política", "devolver".
-
-3. "get_location":
-   - Palabras clave: "dónde están", "ubicación", "dirección", "local".
-
-4. "get_general_recommendations":
-   - Palabras clave: "qué me recomendas", "consejo", "para una fiesta", "para lluvia".
-
-5. "chat_response":
-   - Palabras clave: "Hola", "Gracias", "Chau", "Buenos días".
-
-FORMATO DE RESPUESTA:
-Debes responder ÚNICAMENTE con un objeto JSON válido.
-Ejemplo: { "name": "find_products", "arguments": { "search_term": "white t-shirt", "sort_by_price": "asc" } }
-"""
-
-# TEMPLATE
+# PLANTILLA (Llama 3 Standard)
 TEMPLATE """
-{{- if .System }}### Instruction:
-{{ .System }}
-{{- end }}
-
-{{- if .Tools }}### Instruction:
-(System: Tools detected)
-You have access to:
-{{ .Tools }}
-
-To use a tool, respond ONLY with a valid JSON object matching the schema.
-{{- end }}
-
+{{- if .System }}<|start_header_id|>system<|end_header_id|>
+{{ .System }}<|eot_id|>{{- end }}
 {{- range .Messages }}
-    {{- if eq .Role "user" }}
-### Instruction:
-{{ .Content }}
-    {{- end }}
-    {{- if eq .Role "assistant" }}
-### Response:
-{{ .Content }}
-    {{- end }}
-    {{- if eq .Role "tool" }}
-### Instruction:
---- RESULTADO DE LA HERRAMIENTA ---
-Dato: {{ .Content }}
-
-INSTRUCCIÓN: Ya no necesitas JSON. Responde al usuario amablemente en español basándote en el dato de arriba.
-    {{- end }}
+{{- if eq .Role "user" }}<|start_header_id|>user<|end_header_id|>
+{{ .Content }}<|eot_id|>{{- end }}
+{{- if eq .Role "assistant" }}<|start_header_id|>assistant<|end_header_id|>
+{{ .Content }}<|eot_id|>{{- end }}
 {{- end }}
-
-### Response:
+<|start_header_id|>assistant<|end_header_id|>
 """

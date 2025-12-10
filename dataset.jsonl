@@ -6,106 +6,223 @@
 {"messages": [{"role": "user", "content": "dónde están?"}, {"role": "assistant", "content": "{\"name\": \"get_location\", \"arguments\": {}}"}]}
 {"messages": [{"role": "user", "content": "gracias"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"¡De nada! ¿Necesitás algo más?\"}}"}]}
 {"messages": [{"role": "user", "content": "chau"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"¡Adiós! Que tengas un buen día.\"}}"}]}
-{"messages": [{"role": "user", "content": "¿cuál es la política de devoluciones?"}, {"role": "assistant", "content": "{\"name\": \"get_return_policy\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "cómo hago para devolver algo?"}, {"role": "assistant", "content": "{\"name\": \"get_return_policy\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "dame 5 ejemplos de productos"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 5}}"}]}
-{"messages": [{"role": "user", "content": "listame 3 camperas"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 3}}"}]}
-{"messages": [{"role": "user", "content": "qué campera me recomendás?"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"campera\"}}"}]}
-{"messages": [{"role": "user", "content": "necesito un consejo sobre abrigos"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"abrigo\"}}"}]}
-{"messages": [{"role": "user", "content": "cuánto sale el 'New Look trench coat in camel'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\"}}"}]}
-{"messages": [{"role": "user", "content": "precio del 'Nike Running hooded jacket in pink'"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\"}}"}]}
-{"messages": [{"role": "user", "content": "tenés el 'Stradivarius double breasted wool coat in grey' en talle M?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius double breasted wool coat in grey\", \"talle\": \"M\"}}"}]}
-{"messages": [{"role": "user", "content": "busco el 'JDY oversized trench coat in stone' en L"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"JDY oversized trench coat in stone\", \"talle\": \"L\"}}"}]}
-{"messages": [{"role": "user", "content": "busco una campera nike rosa barata"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"nike jacket pink\", \"sort_by_price\": \"asc\"}}"}]}
-{"messages": [{"role": "user", "content": "cuál es el trench coat más caro?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trench coat\", \"sort_by_price\": \"desc\"}}"}]}
-{"messages": [{"role": "user", "content": "el abrigo de lana (wool coat) más barato"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"wool coat\", \"sort_by_price\": \"asc\"}}"}]}
-{"messages": [{"role": "user", "content": "tenés camperas de cuero (leather jacket)?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"leather jacket\"}}"}]}
-{"messages": [{"role": "user", "content": "busco 'Barneys Originals clara real leather jacket' en S"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Barneys Originals clara real leather jacket\", \"talle\": \"S\"}}"}]}
-{"messages": [{"role": "user", "content": "qué camperas de Stradivarius tenés?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius jacket\"}}"}]}
-{"messages": [{"role": "user", "content": "busco un abrigo gris"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"grey coat\"}}"}]}
-{"messages": [{"role": "user", "content": "precio de 'Stradivarius faux leather biker jacket in black'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius faux leather biker jacket in black\"}}"}]}
-{"messages": [{"role": "user", "content": "stock de 'Stradivarius faux leather biker jacket' en M?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius faux leather biker jacket\", \"talle\": \"M\"}}"}]}
-{"messages": [{"role": "user", "content": "talle S de la campera 'Topshop oversized racer'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Topshop oversized racer jacket\", \"talle\": \"S\"}}"}]}
-{"messages": [{"role": "user", "content": "cuanto el 'ASOS DESIGN longline trench coat'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"ASOS DESIGN longline trench coat in stone\"}}"}]}
-{"messages": [{"role": "user", "content": "qué abrigos (coats) tenés en talle L?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"coat\", \"talle\": \"L\"}}"}]}
-{"messages": [{"role": "user", "content": "busco campera (jacket) en talle XS"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"talle\": \"XS\"}}"}]}
-{"messages": [{"role": "user", "content": "el producto más barato de New Look"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look\", \"sort_by_price\": \"asc\"}}"}]}
-{"messages": [{"role": "user", "content": "el producto más caro de Nike"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike\", \"sort_by_price\": \"desc\"}}"}]}
-{"messages": [{"role": "user", "content": "hola, tenés el 'New Look trench coat in camel'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\"}}"}]}
-{"messages": [{"role": "user", "content": "hola, busco la campera nike rosa"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\"}}"}]}
-{"messages": [{"role": "user", "content": "qué tal? qué precio tiene el abrigo de lana gris de Stradivarius?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius double breasted wool coat in grey\"}}"}]}
-{"messages": [{"role": "user", "content": "cuánto sale la campera de cuero de Barneys?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Barneys Originals clara real leather jacket\"}}"}]}
-{"messages": [{"role": "user", "content": "el trench coat 'JDY oversized' en talle S, tenés?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"JDY oversized trench coat in stone\", \"talle\": \"S\"}}"}]}
-{"messages": [{"role": "user", "content": "atienden los feriados?"}, {"role": "assistant", "content": "{\"name\": \"get_opening_hours\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "cuál es su ig?"}, {"role": "assistant", "content": "{\"name\": \"get_location\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "gracias loco"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"De nada. ¡Cualquier otra cosa, avisame!\"}}"}]}
-{"messages": [{"role": "user", "content": "joya, gracias"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"¡Un placer!\"}}"}]}
-{"messages": [{"role": "user", "content": "cuánto sale el 'Stradivarius trench coat in khaki'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius trench coat in khaki\"}}"}]}
-{"messages": [{"role": "user", "content": "tenés el 'ASOS DESIGN petite longline trench coat' en UK 8?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"ASOS DESIGN petite longline trench coat in stone\", \"talle\": \"UK 8\"}}"}]}
-{"messages": [{"role": "user", "content": "busco campera de cuero talle L"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"leather jacket\", \"talle\": \"L\"}}"}]}
-{"messages": [{"role": "user", "content": "busco la 'Topshop oversized racer jacket' en blanco"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Topshop oversized racer jacket white\"}}"}]}
-{"messages": [{"role": "user", "content": "precio de 'Topshop oversized racer jacket with moto badges in white'"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Topshop oversized racer jacket with moto badges in white\"}}"}]}
-{"messages": [{"role": "user", "content": "Stradivarius oversized faux leather biker jacket, talle M?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius oversized faux leather biker jacket\", \"talle\": \"M\"}}"}]}
-{"messages": [{"role": "user", "content": "qué camperas 'oversized' tenés?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"oversized jacket\"}}"}]}
-{"messages": [{"role": "user", "content": "precio de 'Bershka oversized faux leather jacket in black'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\"}}"}]}
-{"messages": [{"role": "user", "content": "talle M de 'Bershka oversized faux leather jacket'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\", \"talle\": \"M\"}}"}]}
-{"messages": [{"role": "user", "content": "la campera de Bershka negra oversized"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\"}}"}]}
-{"messages": [{"role": "user", "content": "cuánto sale el 'New Look trench coat in camel'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\"}}"}, {"role": "user", "content": "y lo tenés en talle UK 10?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\", \"talle\": \"UK 10\"}}"}]}
-{"messages": [{"role": "user", "content": "hola, busco el abrigo de lana gris de Stradivarius"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius double breasted wool coat in grey\"}}"}, {"role": "user", "content": "genial, ¿qué precio tiene?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius double breasted wool coat in grey\"}}"}, {"role": "user", "content": "¿y en talle M lo tenés?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius double breasted wool coat in grey\", \"talle\": \"M\"}}"}]}
-{"messages": [{"role": "user", "content": "tenés la campera nike rosa?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\"}}"}, {"role": "user", "content": "cuánto sale?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\"}}"}, {"role": "user", "content": "y en talle S?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\", \"talle\": \"S\"}}"}]}
-{"messages": [{"role": "user", "content": "busco un trench coat"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trench coat\"}}"}, {"role": "user", "content": "cuál es el más barato?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trench coat\", \"sort_by_price\": \"asc\"}}"}]}
-{"messages": [{"role": "user", "content": "qué camperas de cuero tenés?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"leather jacket\"}}"}, {"role": "user", "content": "la más barata cuál es?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"leather jacket\", \"sort_by_price\": \"asc\"}}"}, {"role": "user", "content": "ok, y la 'Barneys Originals clara' en talle M?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Barneys Originals clara real leather jacket\", \"talle\": \"M\"}}"}]}
-{"messages": [{"role": "user", "content": "horarios?"}, {"role": "assistant", "content": "{\"name\": \"get_opening_hours\", \"arguments\": {}}"}, {"role": "user", "content": "y la dire?"}, {"role": "assistant", "content": "{\"name\": \"get_location\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "dónde están?"}, {"role": "assistant", "content": "{\"name\": \"get_location\", \"arguments\": {}}"}, {"role": "user", "content": "atienden hoy?"}, {"role": "assistant", "content": "{\"name\": \"get_opening_hours\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "dame 3 productos"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 3}}"}, {"role": "user", "content": "cuánto sale el primero?"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"Por favor, ¿podrías copiar y pegar el nombre del producto para darte el precio exacto?\"}}"}]}
-{"messages": [{"role": "user", "content": "hola, busco la 'Bershka oversized faux leather jacket'"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\"}}"}, {"role": "user", "content": "precio?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\"}}"}, {"role": "user", "content": "talle S?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\", \"talle\": \"S\"}}"}]}
-{"messages": [{"role": "user", "content": "qué camperas tenés?"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 5}}"}, {"role": "user", "content": "el 'New Look trench coat in camel', qué precio tiene?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\"}}"}, {"role": "user", "content": "talle UK 8?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\", \"talle\": \"UK 8\"}}"}]}
-{"messages": [{"role": "user", "content": "q tal"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"¡Hola! ¿En qué te puedo ayudar?\"}}"}]}
-{"messages": [{"role": "user", "content": "buenas"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"¡Buenas! ¿Buscabas algo en particular?\"}}"}]}
-{"messages": [{"role": "user", "content": "era solo eso, mil gracias"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"¡No hay de qué! Saludos.\"}}"}]}
-{"messages": [{"role": "user", "content": "ok"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"¿Necesitás algo más?\"}}"}]}
-{"messages": [{"role": "user", "content": "dale, perfecto"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"Genial. ¡A tu disposición!\"}}"}]}
-{"messages": [{"role": "user", "content": "informacion"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"¡Claro! Decime qué necesitás saber: ¿productos, precios, horarios?\"}}"}]}
-{"messages": [{"role": "user", "content": "ayuda"}, {"role": "assistant", "content": "{\"name\": \"chat_response\", \"arguments\": {\"message\": \"Estoy para ayudarte. ¿Cuál es tu consulta?\"}}"}]}
-{"messages": [{"role": "user", "content": "hasta q hora tienen abierto?"}, {"role": "assistant", "content": "{\"name\": \"get_opening_hours\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "mañana abren?"}, {"role": "assistant", "content": "{\"name\": \"get_opening_hours\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "atienden los sabados?"}, {"role": "assistant", "content": "{\"name\": \"get_opening_hours\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "como llego al local?"}, {"role": "assistant", "content": "{\"name\": \"get_location\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "puedo ir a retirar?"}, {"role": "assistant", "content": "{\"name\": \"get_location\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "si no me anda el talle lo puedo cambiar?"}, {"role": "assistant", "content": "{\"name\": \"get_return_policy\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "cuántos días tengo para cambiarlo?"}, {"role": "assistant", "content": "{\"name\": \"get_return_policy\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "aceptan devoluciones?"}, {"role": "assistant", "content": "{\"name\": \"get_return_policy\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "necesito algo para una fiesta"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"fiesta\"}}"}]}
-{"messages": [{"role": "user", "content": "tips para lavar un abrigo de lana"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"cuidado lana\"}}"}]}
-{"messages": [{"role": "user", "content": "qué campera me recomendás para la lluvia?"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"lluvia\"}}"}]}
-{"messages": [{"role": "user", "content": "busco un regalo para mi novia"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"regalo\"}}"}]}
-{"messages": [{"role": "user", "content": "el 'New Look trench' es impermeable?"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"impermeable\"}}"}]}
-{"messages": [{"role": "user", "content": "dame 2 ejemplos de camperas"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 2}}"}]}
-{"messages": [{"role": "user", "content": "mostrame 4 productos al azar"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 4}}"}]}
-{"messages": [{"role": "user", "content": "tírame data de 3 productos"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 3}}"}]}
-{"messages": [{"role": "user", "content": "no sé qué comprar, mostrame algo"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 5}}"}]}
-{"messages": [{"role": "user", "content": "precio 'Stradivarius faux leather biker jacket'"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius faux leather biker jacket\"}}"}]}
-{"messages": [{"role": "user", "content": "tenes la campera de stradivarius de lana gris?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius double breasted wool coat in grey\"}}"}]}
-{"messages": [{"role": "user", "content": "busco el 'JDY oversized trench coat' en XL o 2XL"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"JDY oversized trench coat in stone\", \"talle\": \"XL\"}}"}]}
-{"messages": [{"role": "user", "content": "precio de 'Topshop oversized racer jacket' color blanco"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Topshop oversized racer jacket white\"}}"}]}
-{"messages": [{"role": "user", "content": "el trench coat mas barato de asos design"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"ASOS DESIGN trench coat\", \"sort_by_price\": \"asc\"}}"}]}
-{"messages": [{"role": "user", "content": "campera nike running rosa talle L"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\", \"talle\": \"L\"}}"}]}
-{"messages": [{"role": "user", "content": "abrigo de lana (wool coat) en talle S, el más caro"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"wool coat\", \"talle\": \"S\", \"sort_by_price\": \"desc\"}}"}]}
-{"messages": [{"role": "user", "content": "cuanto la campera de cuero de barneys?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Barneys Originals clara real leather jacket\"}}"}]}
-{"messages": [{"role": "user", "content": "tenes 'ASOS DESIGN petite longline' en UK 4?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"ASOS DESIGN petite longline trench coat in stone\", \"talle\": \"UK 4\"}}"}]}
-{"messages": [{"role": "user", "content": "campera de cuero S"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"leather jacket\", \"talle\": \"S\"}}"}]}
-{"messages": [{"role": "user", "content": "hola, busco el 'ASOS DESIGN longline trench coat'"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"ASOS DESIGN longline trench coat in stone\"}}"}, {"role": "user", "content": "lo tenés en talle UK 10?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"ASOS DESIGN longline trench coat in stone\", \"talle\": \"UK 10\"}}"}]}
-{"messages": [{"role": "user", "content": "mostrame la campera de cuero de Barneys"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Barneys Originals clara real leather jacket\"}}"}, {"role": "user", "content": "qué precio tiene?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Barneys Originals clara real leather jacket\"}}"}]}
-{"messages": [{"role": "user", "content": "cuál es el horario de atención?"}, {"role": "assistant", "content": "{\"name\": \"get_opening_hours\", \"arguments\": {}}"}, {"role": "user", "content": "ok, y la campera nike rosa en M?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\", \"talle\": \"M\"}}"}]}
-{"messages": [{"role": "user", "content": "tenés el 'New Look trench coat in camel' y el 'JDY oversized trench coat in stone'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel and JDY oversized trench coat in stone\"}}"}, {"role": "user", "content": "cuál es más barato?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel and JDY oversized trench coat in stone\", \"sort_by_price\": \"asc\"}}"}]}
-{"messages": [{"role": "user", "content": "busco abrigos de lana"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"wool coat\"}}"}, {"role": "user", "content": "ordenámelos del más barato al más caro"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"wool coat\", \"sort_by_price\": \"asc\"}}"}, {"role": "user", "content": "el 'Stradivarius double breasted' lo tenés en L?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius double breasted wool coat in grey\", \"talle\": \"L\"}}"}]}
-{"messages": [{"role": "user", "content": "necesito algo para la lluvia"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"lluvia\"}}"}, {"role": "user", "content": "ok, y qué trench coats tenés?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trench coat\"}}"}]}
-{"messages": [{"role": "user", "content": "dónde queda el local?"}, {"role": "assistant", "content": "{\"name\": \"get_location\", \"arguments\": {}}"}, {"role": "user", "content": "puedo comprar online?"}, {"role": "assistant", "content": "{\"name\": \"get_general_recommendations\", \"arguments\": {\"topic\": \"comprar online\"}}"}]}
-{"messages": [{"role": "user", "content": "busco un 'abrigo verde fosforescente'"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"abrigo verde fosforescente\"}}"}, {"role": "user", "content": "uh, no tenés. y camperas de cuero?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"leather jacket\"}}"}]}
-{"messages": [{"role": "user", "content": "precio de la campera nike rosa"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\"}}"}, {"role": "user", "content": "y la tenés en M?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Nike Running hooded jacket in pink\", \"talle\": \"M\"}}"}]}
-{"messages": [{"role": "user", "content": "precio del 'New Look trench coat in camel'?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\"}}"}, {"role": "user", "content": "y si lo compro y no me anda, lo puedo cambiar?"}, {"role": "assistant", "content": "{\"name\": \"get_return_policy\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "hola, busco la 'Bershka oversized faux leather jacket'"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\"}}"}, {"role": "user", "content": "precio?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\"}}"}, {"role": "user", "content": "talle S?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Bershka oversized faux leather jacket in black\", \"talle\": \"S\"}}"}]}
-{"messages": [{"role": "user", "content": "qué camperas tenés?"}, {"role": "assistant", "content": "{\"name\": \"list_sample_products\", \"arguments\": {\"count\": 5}}"}, {"role": "user", "content": "el 'New Look trench coat in camel', qué precio tiene?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\"}}"}, {"role": "user", "content": "talle UK 8?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"New Look trench coat in camel\", \"talle\": \"UK 8\"}}"}]}
-{"messages": [{"role": "user", "content": "atienden los domingos?"}, {"role": "assistant", "content": "{\"name\": \"get_opening_hours\", \"arguments\": {}}"}, {"role": "user", "content": "ok, y la dire?"}, {"role": "assistant", "content": "{\"name\": \"get_location\", \"arguments\": {}}"}]}
-{"messages": [{"role": "user", "content": "busco campera de cuero"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"leather jacket\"}}"}, {"role": "user", "content": "la más barata?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"leather jacket\", \"sort_by_price\": \"asc\"}}"}, {"role": "user", "content": "tenés la 'Barneys Originals clara' en L?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Barneys Originals clara real leather jacket\", \"talle\": \"L\"}}"}]}
-{"messages": [{"role": "user", "content": "talle S 'Stradivarius faux leather biker jacket'"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"Stradivarius faux leather biker jacket\", \"talle\": \"S\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco remeras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero remeras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés remeras?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame remeras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "dame remeras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "necesito remeras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras por favor"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\"}}"}]}
+
+{"messages": [{"role": "user", "content": "remeras baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras economicas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "las remeras mas baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "dame las remeras mas baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero remeras baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"asc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "remeras caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"desc\"}}"}]}
+{"messages": [{"role": "user", "content": "las remeras mas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"desc\"}}"}]}
+{"messages": [{"role": "user", "content": "dame las remeras mas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"desc\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero las remeras mas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"desc\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame las remeras mas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "remeras negras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras blancas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"white\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras rojas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"red\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras verdes"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"green\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras grises"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"grey\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras amarillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"yellow\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras rosas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"pink\"}}"}]}
+
+{"messages": [{"role": "user", "content": "remeras talle S"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"talle\": \"S\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras talle M"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"talle\": \"M\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras talle L"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"talle\": \"L\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras talle XL"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"talle\": \"XL\"}}"}]}
+
+{"messages": [{"role": "user", "content": "remeras negras baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"black\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras blancas talle M"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"white\", \"talle\": \"M\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras rojas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"red\", \"sort_by_price\": \"desc\"}}"}]}
+{"messages": [{"role": "user", "content": "remeras azules talle L baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"t-shirt\", \"color\": \"blue\", \"talle\": \"L\", \"sort_by_price\": \"asc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco pantalones"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero pantalones"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés pantalones?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame pantalones"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\"}}"}]}
+{"messages": [{"role": "user", "content": "dame pantalones"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\"}}"}]}
+
+{"messages": [{"role": "user", "content": "pantalones negros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "pantalones azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "pantalones grises"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\", \"color\": \"grey\"}}"}]}
+{"messages": [{"role": "user", "content": "pantalones marrones"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\", \"color\": \"brown\"}}"}]}
+
+{"messages": [{"role": "user", "content": "pantalones baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "pantalones caros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\", \"sort_by_price\": \"desc\"}}"}]}
+{"messages": [{"role": "user", "content": "los pantalones mas baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "los pantalones mas caros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trousers\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco jeans"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jeans\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero jeans"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jeans\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés jeans?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jeans\"}}"}]}
+{"messages": [{"role": "user", "content": "jeans azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jeans\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "jeans negros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jeans\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "jeans baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jeans\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "jeans caros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jeans\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco zapatillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero zapatillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés zapatillas?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame zapatillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "dame zapatillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+
+{"messages": [{"role": "user", "content": "zapatillas nike"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"nike trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas adidas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"adidas trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas puma"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"puma trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas reebok"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"reebok trainers\"}}"}]}
+
+{"messages": [{"role": "user", "content": "zapatillas blancas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"color\": \"white\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas negras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas rojas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"color\": \"red\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"color\": \"blue\"}}"}]}
+
+{"messages": [{"role": "user", "content": "zapatillas baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"sort_by_price\": \"desc\"}}"}]}
+{"messages": [{"role": "user", "content": "las zapatillas mas baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "las zapatillas mas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "zapatillas nike blancas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"nike trainers\", \"color\": \"white\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas adidas negras baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"adidas trainers\", \"color\": \"black\", \"sort_by_price\": \"asc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco buzos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero buzos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés buzos?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame buzos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "dame buzos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+
+{"messages": [{"role": "user", "content": "buzos negros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos grises"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"color\": \"grey\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos rojos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"color\": \"red\"}}"}]}
+
+{"messages": [{"role": "user", "content": "buzos baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos caros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "buzos nike"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"nike hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos adidas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"adidas hoodie\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco camperas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero camperas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés camperas?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame camperas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\"}}"}]}
+
+{"messages": [{"role": "user", "content": "camperas negras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "camperas azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "camperas rojas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"color\": \"red\"}}"}]}
+
+{"messages": [{"role": "user", "content": "camperas baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "camperas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco shorts"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero shorts"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés shorts?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\"}}"}]}
+
+{"messages": [{"role": "user", "content": "shorts negros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "shorts azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "shorts baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\", \"sort_by_price\": \"asc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco chombas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero chombas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés chombas?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\"}}"}]}
+
+{"messages": [{"role": "user", "content": "chombas blancas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\", \"color\": \"white\"}}"}]}
+{"messages": [{"role": "user", "content": "chombas negras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "chombas azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\", \"color\": \"blue\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco vestidos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero vestidos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés vestidos?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\"}}"}]}
+
+{"messages": [{"role": "user", "content": "vestidos negros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "vestidos rojos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\", \"color\": \"red\"}}"}]}
+{"messages": [{"role": "user", "content": "vestidos baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\", \"sort_by_price\": \"asc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco botas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"boots\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero botas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"boots\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés botas?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"boots\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame botas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"boots\"}}"}]}
+{"messages": [{"role": "user", "content": "dame botas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"boots\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco zapatillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero zapatillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés zapatillas?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame zapatillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "dame zapatillas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\"}}"}]}
+
+{"messages": [{"role": "user", "content": "zapatillas nike"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"nike trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas adidas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"adidas trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas puma"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"puma trainers\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas reebok"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"reebok trainers\"}}"}]}
+
+{"messages": [{"role": "user", "content": "zapatillas blancas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"color\": \"white\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas negras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas rojas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"color\": \"red\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"color\": \"blue\"}}"}]}
+
+{"messages": [{"role": "user", "content": "zapatillas baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"sort_by_price\": \"desc\"}}"}]}
+{"messages": [{"role": "user", "content": "las zapatillas mas baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "las zapatillas mas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"trainers\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "zapatillas nike blancas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"nike trainers\", \"color\": \"white\"}}"}]}
+{"messages": [{"role": "user", "content": "zapatillas adidas negras baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"adidas trainers\", \"color\": \"black\", \"sort_by_price\": \"asc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco buzos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero buzos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés buzos?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame buzos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+{"messages": [{"role": "user", "content": "dame buzos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\"}}"}]}
+
+{"messages": [{"role": "user", "content": "buzos negros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos grises"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"color\": \"grey\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos rojos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"color\": \"red\"}}"}]}
+
+{"messages": [{"role": "user", "content": "buzos baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "buzos caros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"hoodie\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco camperas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero camperas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés camperas?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\"}}"}]}
+{"messages": [{"role": "user", "content": "mostrame camperas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\"}}"}]}
+
+{"messages": [{"role": "user", "content": "camperas negras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "camperas azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "camperas rojas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"color\": \"red\"}}"}]}
+
+{"messages": [{"role": "user", "content": "camperas baratas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"sort_by_price\": \"asc\"}}"}]}
+{"messages": [{"role": "user", "content": "camperas caras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"jacket\", \"sort_by_price\": \"desc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco shorts"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero shorts"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés shorts?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\"}}"}]}
+
+{"messages": [{"role": "user", "content": "shorts negros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "shorts azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\", \"color\": \"blue\"}}"}]}
+{"messages": [{"role": "user", "content": "shorts baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"shorts\", \"sort_by_price\": \"asc\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco chombas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero chombas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés chombas?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\"}}"}]}
+
+{"messages": [{"role": "user", "content": "chombas blancas"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\", \"color\": \"white\"}}"}]}
+{"messages": [{"role": "user", "content": "chombas negras"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "chombas azules"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"polo shirt\", \"color\": \"blue\"}}"}]}
+
+{"messages": [{"role": "user", "content": "busco vestidos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\"}}"}]}
+{"messages": [{"role": "user", "content": "quiero vestidos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\"}}"}]}
+{"messages": [{"role": "user", "content": "tenés vestidos?"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\"}}"}]}
+
+{"messages": [{"role": "user", "content": "vestidos negros"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\", \"color\": \"black\"}}"}]}
+{"messages": [{"role": "user", "content": "vestidos rojos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\", \"color\": \"red\"}}"}]}
+{"messages": [{"role": "user", "content": "vestidos baratos"}, {"role": "assistant", "content": "{\"name\": \"find_products\", \"arguments\": {\"search_term\": \"dress\", \"sort_by_price\": \"asc\"}}"}]}
