@@ -85,11 +85,6 @@ def procesar_intencion_con_memoria(texto_usuario):
         "pantalón": "Jeans", "pantalon": "Jeans", "pantalones": "Jeans",
         "jeans": "Jeans", "jean": "Jeans", "vaquero": "Jeans", "vaqueros": "Jeans",
         
-        # Zapatillas (Probamos 'Sneakers' para mayor compatibilidad)
-        "zapatillas": "Sneakers", "zapatilla": "Sneakers", 
-        "botas": "Boots", "bota": "Boots",
-        "calzado": "Shoes", "zapatos": "Shoes", "zapato": "Shoes",
-        
         # Abrigos
         "campera": "Jacket", "camperas": "Jacket",
         "chaqueta": "Jacket", "chaquetas": "Jacket",
@@ -131,7 +126,7 @@ def procesar_intencion_con_memoria(texto_usuario):
     # CASO 3: DESCONOCIDO
     return {
         "tipo": "chat",
-        "respuesta": "Disculpa, no entendí bien qué producto buscas. Prueba con: 'remeras', 'jeans', 'zapatillas'..."
+        "respuesta": "Disculpa, no entendí bien qué producto buscas. Prueba con: 'remeras', 'jeans'..."
     }
 
 # --- BUCLE PRINCIPAL ---
