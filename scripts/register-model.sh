@@ -2,6 +2,11 @@
 
 export $(grep -v '^#' .env | xargs)
 MODEL=$MODELO
+
+if [ -z "$MODEL" ]; then
+    echo "❌ Error: La variable MODELO no está definida en el archivo .env"
+    exit 1
+fi
 # 1. Encender Ollama en segundo plano
 ollama serve > /dev/null 2>&1 &
 

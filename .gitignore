@@ -1,5 +1,5 @@
 venv_ollama/
-
+venv_modelo/
 __pycache__/
 
 *.pyc

@@ -7,8 +7,8 @@ import inspect
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
-import negocio 
-from negocio import (
+import src.negocio as negocio 
+from src.negocio import (
     find_products, get_opening_hours, get_location,
     get_general_recommendations, list_sample_products,
     get_return_policy, chat_response 
