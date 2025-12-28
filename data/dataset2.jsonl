@@ -1,0 +1,42 @@
+{"messages":[{"role":"user","content":"hola"},{"role":"assistant","content":"{\"name\":\"chat_response\",\"arguments\":{\"message\":\"¡Hola! ¿Buscás camperas, trench coats o algo deportivo?\"}}"}]}
+{"messages":[{"role":"user","content":"buen día"},{"role":"assistant","content":"{\"name\":\"chat_response\",\"arguments\":{\"message\":\"¡Buen día! Estoy para ayudarte 😊\"}}"}]}
+{"messages":[{"role":"user","content":"gracias"},{"role":"assistant","content":"{\"name\":\"chat_response\",\"arguments\":{\"message\":\"¡De nada! Cualquier cosa avisame.\"}}"}]}
+{"messages":[{"role":"user","content":"ok"},{"role":"assistant","content":"{\"name\":\"chat_response\",\"arguments\":{\"message\":\"Perfecto 👍\"}}"}]}
+{"messages":[{"role":"user","content":"chau"},{"role":"assistant","content":"{\"name\":\"chat_response\",\"arguments\":{\"message\":\"¡Hasta luego!\"}}"}]}
+
+{"messages":[{"role":"user","content":"busco trench coat"},{"role":"assistant","content":"{\"name\":\"search_products\",\"arguments\":{\"query\":\"trench\"}}"}]}
+{"messages":[{"role":"user","content":"quiero una campera"},{"role":"assistant","content":"{\"name\":\"search_products\",\"arguments\":{\"query\":\"jacket\"}}"}]}
+{"messages":[{"role":"user","content":"algo de cuero"},{"role":"assistant","content":"{\"name\":\"search_products\",\"arguments\":{\"query\":\"leather\"}}"}]}
+{"messages":[{"role":"user","content":"abrigo largo"},{"role":"assistant","content":"{\"name\":\"search_products\",\"arguments\":{\"query\":\"longline\"}}"}]}
+{"messages":[{"role":"user","content":"ropa deportiva"},{"role":"assistant","content":"{\"name\":\"search_products\",\"arguments\":{\"query\":\"running\"}}"}]}
+{"messages":[{"role":"user","content":"camperas nike"},{"role":"assistant","content":"{\"name\":\"search_products\",\"arguments\":{\"query\":\"Nike\"}}"}]}
+{"messages":[{"role":"user","content":"tapados de lana"},{"role":"assistant","content":"{\"name\":\"search_products\",\"arguments\":{\"query\":\"wool\"}}"}]}
+
+{"messages":[{"role":"user","content":"en color negro"},{"role":"assistant","content":"{\"name\":\"refine_products\",\"arguments\":{\"color\":\"black\"}}"}]}
+{"messages":[{"role":"user","content":"gris"},{"role":"assistant","content":"{\"name\":\"refine_products\",\"arguments\":{\"color\":\"GREY\"}}"}]}
+{"messages":[{"role":"user","content":"pink"},{"role":"assistant","content":"{\"name\":\"refine_products\",\"arguments\":{\"color\":\"Pink\"}}"}]}
+{"messages":[{"role":"user","content":"talle M"},{"role":"assistant","content":"{\"name\":\"refine_products\",\"arguments\":{\"talle\":\"M\"}}"}]}
+{"messages":[{"role":"user","content":"UK 10"},{"role":"assistant","content":"{\"name\":\"refine_products\",\"arguments\":{\"talle\":\"UK 10\"}}"}]}
+{"messages":[{"role":"user","content":"menos de 60"},{"role":"assistant","content":"{\"name\":\"refine_products\",\"arguments\":{\"max_precio\":60}}"}]}
+{"messages":[{"role":"user","content":"ordená por precio más barato"},{"role":"assistant","content":"{\"name\":\"refine_products\",\"arguments\":{\"sort_by_price\":\"asc\"}}"}]}
+{"messages":[{"role":"user","content":"los más caros primero"},{"role":"assistant","content":"{\"name\":\"refine_products\",\"arguments\":{\"sort_by_price\":\"desc\"}}"}]}
+
+{"messages":[{"role":"user","content":"mostrame el sku 126704571"},{"role":"assistant","content":"{\"name\":\"get_product_by_sku\",\"arguments\":{\"sku\":\"126704571\"}}"}]}
+{"messages":[{"role":"user","content":"detalle del producto 123650194"},{"role":"assistant","content":"{\"name\":\"get_product_by_sku\",\"arguments\":{\"sku\":\"123650194\"}}"}]}
+{"messages":[{"role":"user","content":"quiero ver el 121963507"},{"role":"assistant","content":"{\"name\":\"get_product_by_sku\",\"arguments\":{\"sku\":\"121963507\"}}"}]}
+
+{"messages":[{"role":"user","content":"mostrame similares a este"},{"role":"assistant","content":"{\"name\":\"get_similar_products\",\"arguments\":{\"sku\":\"126704571\"}}"}]}
+{"messages":[{"role":"user","content":"hay algo parecido?"},{"role":"assistant","content":"{\"name\":\"get_similar_products\",\"arguments\":{\"sku\":\"123650194\"}}"}]}
+{"messages":[{"role":"user","content":"otros del mismo tipo"},{"role":"assistant","content":"{\"name\":\"get_similar_products\",\"arguments\":{\"sku\":\"121963507\"}}"}]}
+
+{"messages":[{"role":"user","content":"qué me recomendás?"},{"role":"assistant","content":"{\"name\":\"recommend_products\",\"arguments\":{}}"}]}
+{"messages":[{"role":"user","content":"algo popular"},{"role":"assistant","content":"{\"name\":\"recommend_products\",\"arguments\":{}}"}]}
+{"messages":[{"role":"user","content":"lo más vendido"},{"role":"assistant","content":"{\"name\":\"recommend_products\",\"arguments\":{}}"}]}
+
+{"messages":[{"role":"user","content":"resumime el producto 126704571"},{"role":"assistant","content":"{\"name\":\"summarize_product\",\"arguments\":{\"sku\":\"126704571\"}}"}]}
+{"messages":[{"role":"user","content":"qué tal es el 123650194?"},{"role":"assistant","content":"{\"name\":\"summarize_product\",\"arguments\":{\"sku\":\"123650194\"}}"}]}
+{"messages":[{"role":"user","content":"descripción corta del 121963507"},{"role":"assistant","content":"{\"name\":\"summarize_product\",\"arguments\":{\"sku\":\"121963507\"}}"}]}
+
+{"messages":[{"role":"user","content":"hacen envíos?"},{"role":"assistant","content":"{\"name\":\"business_info\",\"arguments\":{\"topic\":\"envios\"}}"}]}
+{"messages":[{"role":"user","content":"formas de pago"},{"role":"assistant","content":"{\"name\":\"business_info\",\"arguments\":{\"topic\":\"pagos\"}}"}]}
+{"messages":[{"role":"user","content":"cómo funcionan los cambios?"},{"role":"assistant","content":"{\"name\":\"business_info\",\"arguments\":{\"topic\":\"cambios\"}}"}]}
