@@ -35,7 +35,7 @@ DTYPE = None  # auto (float16)
 OUTPUT_DIR = "outputs"
 LORA_OUTPUT_DIR = "modelo_lora_agente_ropa"
 
-DATASET_PATH = "dataset.jsonl"
+DATASET_PATH = "../data/dataset2.jsonl"
 
 # -------------------------------------------------------------------
 # CARGA DEL MODELO Y TOKENIZER
