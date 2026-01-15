@@ -29,7 +29,7 @@ Salida:
 
 
 # --- CONFIGURACIÓN ---
-model_name = "mi_modelo_afinado_lora" 
+model_name = "modelo_lora_agente_ropa"
 output_dir = "mi_modelo_ollama"
 max_seq_length = 1024
 dtype = None
