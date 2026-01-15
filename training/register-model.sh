@@ -16,11 +16,11 @@ sleep 5
 
 # 3. Registrar el modelo
 if [ -f "Modelfile.avanzado" ]; then
-    echo "📝 Registrando modelo desde el directorio actual..."
+    echo "📝 Buscando Modelfile.Avanzado en la subcarpeta..."
     ollama create $MODEL -f Modelfile.avanzado
 else
-    echo "📝 Buscando Modelfile en la subcarpeta..."
-    ollama create $MODEL -f mi_modelo_ollama/Modelfile
+    echo "📝 Registrando modelo desde el directorio actual..."
+    ollama create $MODEL -f Modelfile
 fi
 
 # 4. Apagar Ollama para dejar todo limpio
