@@ -1,7 +1,7 @@
 import pandas as pd
 from langchain.tools import tool
 
-df = pd.read_csv("data\products_asos.csv")
+df = pd.read_csv("../data/products_asos.csv")
 
 @tool
 def search_products(query: str):

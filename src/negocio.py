@@ -9,7 +9,7 @@ def cargar_base_de_datos():
     """Carga el CSV en un DataFrame de Pandas y prepara los datos."""
     global db
     try:
-        df = pd.read_csv("products_asos.csv")
+        df = pd.read_csv("../data/products_asos.csv")
         # Renombrar columnas para estandarizar
         df = df.rename(columns={"nombre": "name", "precio": "price", "talle": "size", "color": "color_col"})
         
