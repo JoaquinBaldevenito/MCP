@@ -2,7 +2,7 @@
 
 export $(grep -v '^#' .env | xargs)
 REQUIRED_MODEL=$MODELO
-VENV_DIR=".venv"
+VENV_DIR="../.venv"
 LOG_FILE="debug.log"
 
 if [ -d "$VENV_DIR" ]; then
@@ -71,19 +71,20 @@ else
     echo "✅ Instancia temporal lista"
 fi
 
-MODELFILE="Modelfile.avanzado" # O el nombre que uses
+MODELFILE="../training/Modelfile.avanzado" # O el nombre que uses
 
 if [ -f "$MODELFILE" ]; then
     echo "📝 Forzando actualización del modelo '$REQUIRED_MODEL'..."
     ollama create "$REQUIRED_MODEL" -f "$MODELFILE"
 else
     echo "⚠️  No encontré el Modelfile. Usando modelo en memoria."
+    ollama create "$REQUIRED_MODEL" -f "../training/Modelfile"
 fi
 
 echo "--------------------------------------------------"
-echo "🚀 Ejecutando main.py"
+echo "🚀 Ejecutando main2.py"
 echo "--------------------------------------------------"
-python main.py
+python ./main2.py
 
 if [ "$OLLAMA_STARTED_BY_SCRIPT" = true ]; then
     echo "--------------------------------------------------"
