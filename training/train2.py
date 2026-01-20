@@ -86,15 +86,20 @@ Formato esperado en dataset.jsonl:
 o conversaciones más largas.
 """
 
+# Definimos el System Prompt que queremos que el modelo aprenda de memoria
+SYSTEM_PROMPT = """Eres un asistente experto en ventas.
+TU OBJETIVO: Responder SIEMPRE ejecutando una herramienta (Tool) en formato JSON.
+NO hables texto plano."""
+
 def format_chat(example):
     conversation = example["messages"]
 
-    text = ""
+    text = f"<|system|>\n{SYSTEM_PROMPT}<|end|>\n"
     for msg in conversation:
         if msg["role"] == "user":
-            text += f"<|user|>\n{msg['content']}\n"
+            text += f"<|user|>\n{msg['content']}<|end|>\n"
         elif msg["role"] == "assistant":
-            text += f"<|assistant|>\n{msg['content']}\n"
+            text += f"<|assistant|>\n{msg['content']}<|end|>\n"
 
     text += EOS_TOKEN
     return {"text": text}

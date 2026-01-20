@@ -25,42 +25,11 @@ print(f"🤖 Usando modelo afinado: {MODEL_NAME}")
 
 llm = ChatOllama(
     model=MODEL_NAME,
-    temperature=0.0  # CRÍTICO para que no rompa el JSON
+    temperature=0.0,
+    format="json"
 )
 
 print("✅ Sistema listo\n")
-
-# =========================
-# PROMPT DEL SISTEMA
-# =========================
-
-SYSTEM_PROMPT = """
-Eres un asistente de una tienda de ropa.
-
-Cuando el usuario necesite información del negocio o productos,
-DEBES responder únicamente con un JSON válido, sin texto extra.
-
-Formato OBLIGATORIO:
-{
-  "name": "<tool_name>",
-  "arguments": { ... }
-}
-
-Tools disponibles:
-- search_products(query)
-- refine_products(color?, talle?, max_precio?, sort_by_price?)
-- get_product_by_sku(sku)
-- get_similar_products(sku)
-- recommend_products()
-- summarize_product(sku)
-- business_info(topic)
-- chat_response(message)
-
-Reglas:
-- NO expliques el JSON
-- NO escribas texto fuera del JSON
-- Si es charla normal, usa chat_response
-"""
 
 # =========================
 # EJECUTOR DE TOOLS
@@ -102,8 +71,7 @@ def mostrar_resultado(resultado):
         if not resultado:
             print("Bot: No encontré resultados.")
             return
-
-        print("Bot:")
+        print("Bot: pase el not resultado")
         for p in resultado:
             nombre = p.get("nombre", "Producto")
             precio = p.get("precio", "")
@@ -114,8 +82,7 @@ def mostrar_resultado(resultado):
         if not productos:
             print("Bot: No encontré productos con esos filtros.")
             return
-
-        print("Bot:")
+        print("Bot: pase el not productos")
         for p in productos:
             print(f"• {p['nombre']} → ${p['precio']}")
 
@@ -131,29 +98,28 @@ while True:
     if user_input.lower() == "salir":
         break
 
-    messages = [
-        SystemMessage(content=SYSTEM_PROMPT),
-        HumanMessage(content=user_input)
-    ]
-
-    response = llm.invoke(messages)
+    response = llm.invoke(user_input)
     content = response.content.strip()
+    print(f"DEBUG - Lo que llegó del modelo:\n{content}\n----------------")
+
+    if not content:
+        print("Bot: (El modelo no generó respuesta JSON válida. Intenta reformular).")
+        continue
 
     try:
-        # Intentar extraer JSON
-        match = re.search(r"\{.*\}", content, re.DOTALL)
-        if not match:
-            raise ValueError("No JSON")
-
-        data = json.loads(match.group(0))
+        # Como forzamos JSON, no necesitamos Regex complejos, parseamos directo
+        data = json.loads(content)
+        
         tool_name = data.get("name")
         args = data.get("arguments", {})
 
-        print(f"🛠️ Tool elegida: {tool_name} {args}")
+        print(f"🛠️ Tool elegida: {tool_name}")
 
         resultado = ejecutar_tool(tool_name, args)
+        print(f"🧠 Resultado: {resultado}")
         mostrar_resultado(resultado)
-
-    except Exception:
-        # No era JSON → charla normal
-        print(f"Bot: {content}")
+    except json.JSONDecodeError:
+        print("Bot: (Error interno: El modelo no generó una instrucción válida)")
+        print(f"DEBUG ERROR: Contenido recibido: '{content}'")
+    except Exception as e:
+        print(f"Error: {e}")
